@@ -8,3 +8,27 @@
   width: 90% !important;
   border: #f4f4f4 3px solid !important;
 }
+
+/* section-icons layout*/
+.section-icons {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .section-icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+    
+/* Card panel layout */
+.card-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
