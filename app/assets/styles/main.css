@@ -10,7 +10,9 @@
 }
 
 /* section-icons layout*/
-.section-icons {
+.section-icons,
+.places
+ {
     display: grid;
     grid-template-columns: 300px;
     justify-items: center;
@@ -19,8 +21,9 @@
   }
   
   @media only screen and (min-width: 850px) {
-    .section-icons {
-      display: grid;
+    .section-icons,
+    .places
+     {
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -31,4 +34,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+/* section places */
+
+.places__title {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.places__btn {
+  grid-column: 2/3;
 }
