@@ -37,5 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   elems = document.querySelectorAll('.autocomplete');
   instances = M.Autocomplete.init(elems, options);
+
+
+  // materialbox
+  elems = document.querySelectorAll('.materialboxed');
+  instances = M.Materialbox.init(elems);
+
+  // scrollspy
+  elems = document.querySelectorAll('.scrollspy');
+  instances = M.ScrollSpy.init(elems);
 })
+
+
 

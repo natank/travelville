@@ -43,14 +43,10 @@ h4, h6 {
 
 /* section places */
 
-.places__title {
+.full-row {
   grid-column: 1/-1;
-  text-align: center;
 }
 
-.places__btn {
-  grid-column: 2/3;
-}
 
 /* Section follow */
 .follow {
@@ -68,4 +64,50 @@ h4, h6 {
 }
 
 
+/* section: gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 
+@media only screen and (min-width: 800px) {
+  .gallery{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* section: contact  */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+.contact__message {
+  grid-column: 1/-1;
+  grid-row: 2;
+  align-items: stretch;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact__message {
+    grid-column: 2/3;    
+    grid-row: 1/span 2;    
+  }
+}
+
+
+.contact__message .btn {
+  align-self: center;
+  width: 25%;
+}
