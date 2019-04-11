@@ -1,3 +1,5 @@
+import { M } from './materialize';
+
 /* Init sidenav */
 document.addEventListener('DOMContentLoaded', function() {
   let elems=document.querySelectorAll('.sidenav');
