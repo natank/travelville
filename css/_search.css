@@ -1,0 +1,8 @@
+.search {
+  &__input {
+    padding: px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 6px solid !important;
+  }
+}

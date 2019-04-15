@@ -13,66 +13,86 @@
   </head>
 
   <body>
+    <nav class="teal">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo">Travelvile</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#popular">Popular Places</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-      <nav class="teal">
-        <div class="nav-wrapper">
-          <a href="#home" class="brand-logo">Travelvile</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#search">Search</a></li>
-            <li><a href="#popular">Popular Places</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Section Slider -->
-        
-      </nav>
-      <section class="slider">
-        <ul class="slides">
-          <li>
-            <img src="./img/resort1.jpg"> <!-- random image -->
-            <div class="caption left-align">
-              <h2>Take Your Dream Vacation</h2>
-              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempora. Modi a repudiandae provident quaerat.
+        <ul class="sidenav" id="mobile-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#popular">Popular Places</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Section Slider -->
+    </nav>
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./img/resort1.jpg" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellat, tempora. Modi a repudiandae provident quaerat.
             </h5>
             <a href="#" class="btn btn-large slider__btn">Learn More</a>
-            </div>
-          </li>
-          <li>
-              <img src="./img/resort2.jpg"> <!-- random image -->
-              <div class="caption right-align">
-                <h2>Group & Individual Getaways</h2>
-                <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempora. Modi a repudiandae provident quaerat.
-              </h5>
-              <a href="#" class="btn btn-large slider__btn">Learn More</a>
-              </div>
-            </li>
-            <li>
-                <img src="./img/resort3.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <h2>Quiet & Comfort Environment</h2>
-                  <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempora. Modi a repudiandae provident quaerat.
-                </h5>
-                <a href="#" class="btn btn-large slider__btn">Learn More</a>
-                </div>
-              </li>
-        </ul>
-      </section>
-
-      <ul class="sidenav" id="mobile-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#search">Search</a></li>
-        <li><a href="#popular">Popular Places</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+          </div>
+        </li>
+        <li>
+          <img src="./img/resort2.jpg" />
+          <!-- random image -->
+          <div class="caption right-align">
+            <h2>Group & Individual Getaways</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellat, tempora. Modi a repudiandae provident quaerat.
+            </h5>
+            <a href="#" class="btn btn-large slider__btn">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="./img/resort3.jpg" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h2>Quiet & Comfort Environment</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellat, tempora. Modi a repudiandae provident quaerat.
+            </h5>
+            <a href="#" class="btn btn-large slider__btn">Learn More</a>
+          </div>
+        </li>
       </ul>
-    </div>
+    </section>
+    <!-- Section Serch -->
+
+    <section class="search teal section darken-1 white-text center">
+      <div class="container">
+        <h3>Search Destinations</h3>
+        <div class="input-field">
+          <input
+            type="text"
+            class="white grey-text autocomplete search__input"
+            placeholder="Aruba, Cancun, etc..."
+            type="text"
+            id="autocomplete-input"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
