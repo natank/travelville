@@ -21,12 +21,27 @@ module.exports = {
         ]
       },
       {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              sourceMap: true
+            }
+          },
+          'postcss-loader',
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+        ]
+      },
+      {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
             options: {
-              attrs: ["img:src"]
+              attrs: ['img:src']
             }
           }
         ]
@@ -35,9 +50,9 @@ module.exports = {
         test: /\.(jpg|gif|png)$/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              name: "images/[name]-[hash:8].[ext]"
+              name: 'images/[name]-[hash:8].[ext]'
             }
           }
         ]
