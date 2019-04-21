@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Sidenav.init(elems);
 
   elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems);
+  instances = M.Slider.init(elems);
 
   // Autocomplete
 
@@ -20,5 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
   elems = document.querySelectorAll('.autocomplete');
-  var instances = M.Autocomplete.init(elems, options);
+  instances = M.Autocomplete.init(elems, options);
+
+  // scrollspy
+  elems = document.querySelectorAll('.scrollspy');
+  instances = M.ScrollSpy.init(elems, options);
 });

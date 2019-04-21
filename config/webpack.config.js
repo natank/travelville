@@ -2,13 +2,14 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './js/main.js',
   devServer: {
-    open: true,
     contentBase: path.join(__dirname, 'dist'),
-    overlay: true
+    overlay: true,
+    port: 3100
   },
   module: {
     rules: [
@@ -66,6 +67,15 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'index.html'
+    }),
+    new BrowserSyncPlugin({
+      // browse to http://localhost:3000/ during development,
+      // ./public directory is being served
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost:3100/',
+      injectCss: true,
+      reload: false
     })
   ],
   output: {

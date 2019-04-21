@@ -1,0 +1,29 @@
+@include atSmall {
+  .col-sm-1 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+@include atMedium {
+  .col-md-1 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .col-md-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include atLarge {
+  .col-lg-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .col-lg-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

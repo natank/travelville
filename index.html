@@ -12,10 +12,10 @@
     <title>Travelvile</title>
   </head>
 
-  <body>
+  <body id="home" class="scrollspy">
     <nav class="teal">
       <div class="nav-wrapper">
-        <a href="#home" class="brand-logo">Travelvile</a>
+        <a href="#home" class="brand-logo">Travelville</a>
         <a href="#" data-target="mobile-nav" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
@@ -80,7 +80,10 @@
     </section>
     <!-- Section Serch -->
 
-    <section class="search teal section darken-1 white-text center">
+    <section
+      class="search teal section darken-1 white-text center scrollspy"
+      id="search"
+    >
       <div class="container">
         <h3>Search Destinations</h3>
         <div class="input-field">
@@ -96,7 +99,9 @@
     </section>
 
     <!-- Section Icon Boxse -->
-    <section class="section section-icons grey lighten-4 container center">
+    <section
+      class="section section-icons grey lighten-4 container center col-sm-1 col-lg-3"
+    >
       <div class="card-panel">
         <i class="material-icons large teal-text">room</i>
         <h4>Pick Where</h4>
@@ -121,5 +126,197 @@
         </p>
       </div>
     </section>
+
+    <!-- Section: Popular -->
+    <section id="popular" class="section popular container scrollspy">
+      <h4 class="center">
+        <span class="teal-text">Popular</span>
+        Places
+      </h4>
+      <div class="popular__cards col-sm-1 col-lg-3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/resort1.jpg" alt="" />
+            <span class="car-title">Cancun, Mexico</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ea
+              laudantium, vel earum eos sint deleniti excepturi qui adipisci
+              incidunt.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/resort2.jpg" alt="" />
+            <span class="car-title">The Bahamas</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ea
+              laudantium, vel earum eos sint deleniti excepturi qui adipisci
+              incidunt.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="img/resort3.jpg" alt="" />
+            <span class="car-title">Nova Scotia</span>
+          </div>
+          <div class="card-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ea
+              laudantium, vel earum eos sint deleniti excepturi qui adipisci
+              incidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <a href="#contact" class="btn btn-large grey darken-3">
+          <i class="material-icons left">send</i>
+          Contact For Booking
+        </a>
+      </div>
+    </section>
+    <!-- Section: Follow -->
+    <section class="section follow teal darken-2 white-text center">
+      <div class="container">
+        <h4>Follow Travelville</h4>
+        <p>Follow us on social media for special offers</p>
+        <a href="https://facebook.com" target="_blank" class="white-text"
+          ><i class="fab fa-facebook fa-4x"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank" class=" white-text"
+          ><i class="fab fa-twitter fa-4x"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" class=" white-text"
+          ><i class="fab fa-linkedin fa-4x"></i
+        ></a>
+        <a href="https://googleplus.com" target="_blank" class=" white-text"
+          ><i class="fab fa-google-plus fa-4x"></i
+        ></a>
+        <a href="https://pinterest.com" target="_blank" class=" white-text"
+          ><i class="fab fa-pinterest fa-4x"></i
+        ></a>
+      </div>
+    </section>
+    <!-- Section: Gallery -->
+    <section id="gallery" class="section gallery scrollspy">
+      <h4 class="center"><span class="teal-text">Photo</span> Gallery</h4>
+      <div class="container col-sm-1 col-lg-4">
+        <img
+          class="materialboxed responsive-img"
+          src="./img/beach.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/travel.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/nature.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/travel.jpg"
+          alt=""
+        />
+
+        <img
+          class="materialboxed responsive-img"
+          src="./img/beaches.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/traveling.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/bridge.jpg"
+          alt=""
+        />
+        <img class="materialboxed responsive-img" src="./img/boat.jpg" alt="" />
+
+        <img
+          class="materialboxed responsive-img"
+          src="./img/water.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/building.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/trees.jpg"
+          alt=""
+        />
+        <img
+          class="materialboxed responsive-img"
+          src="./img/cruise.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- Section: Contact -->
+    <section id="contact" class="section contact scrollspy">
+      <div class="container">
+        <div class="contact__booking card-panel teal white-text center">
+          <i class="material-icons medium">email</i>
+          <h4>Contact Us For Booking</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            corrupti. Eos fugit veniam illum totam saepe inventore libero est
+            excepturi!
+          </p>
+        </div>
+        <ul class="contact__location collection with-header">
+          <li class="collection-header">
+            <h4>Location</h4>
+          </li>
+          <li class="collection-item">Travelville Agency</li>
+          <li class="collection-item">555 Beach rd, Suite 33</li>
+          <li class="collection-item">Miami FL, 55555</li>
+        </ul>
+        <div class="contact__form card-panel grey lighten-3">
+          <h5>Please fill out this form</h5>
+          <div class="input-field">
+            <input type="text" placeholder="Name" id="name" />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Phone" id="phone" />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              class="materialize-textarea"
+              placeholder="Enter Message"
+              rows="12"
+              id="message"
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </section>
+    <!-- Footer  -->
+    <footer class="section teal darken-2 white-text center">
+      <p class="flow-text">Travelville &copy; 2018</p>
+    </footer>
   </body>
 </html>
